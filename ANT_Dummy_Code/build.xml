@@ -1,0 +1,19 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+		<project name = "Costco" default="info">
+		
+			<target name= "compile">
+			<echo>This is a compile statement</echo>
+					</target>
+					
+					<target name = "clean" depends="compile">
+					<echo>This is a clean block </echo>
+					</target>
+					
+								<target name ="run" depends="clean">
+								<echo>This is a run block </echo>
+								</target>
+								
+									<target name="info" depends ="run">
+									<echo>This is a jar block</echo>
+									</target>
+					</project>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project name="Hello world project" default="clean">
+		
+			<target name="clean">
+			<delete dir ="build"/>
+			
+			</target>
+			
+			<target name="info">
+			<echo>"Hello world-welcome"</echo>
+			<echo>Apache ant version is ${ant.version} and ant files are ${ant.file}</echo>
+			</target>
+			
+			<target name ="compile" depends="info">
+			<mkdir dir="build/classes"/>
+			
+					<javac srcdir='src' destdir="build/classes"/>
+					</target>
+					
+					<target name="jar">
+					<mkdir dir="build/jar"/>
+					<jar destfile="build/jar/Hello world.jar"basedir="build/classes">
+					
+					<manifest>
+					<attribute name="Main-class"value="oata.Hello world"/>
+					</manifest>
+					     </jar>
+						 
+						 <echo>job created </echo>
+						 </target>
+						 
+						 <target name = "run">
+						 <java jar ="build/jar/Hello world.jar" fork="true"/>
+						 
+						 </target>
+						 </project>

@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+    <project name ="intel" default ="compile">
+	
+	 <target name ="info">
+	 <echo> welcome to compile block </echo>
+	   </target>
+	   
+	     <target name ="clean" depends ="info">
+	 <echo> welcome to compile block </echo>
+		   </target>
+	   
+	       <target name ="compile" depends="clean">
+	 <echo> welcome to compile block </echo>
+	 
+	   </target>
+	   
+	   </project>

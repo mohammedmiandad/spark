@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<project name = "Macys"  default ="info">
+		<target name = "info">
+		 <echo>${ant.file}</echo>
+		 <echo>${ant.version}</echo>
+		 <echo>${Basedir} </echo>
+		 <echo>${ant.java.version}</echo>
+		 <echo>${ant.project.name}</echo>
+		 <echo>${ant.project.default-targets}</echo>
+		 <echo>${ant.project.invoked-targets}</echo>
+		 <echo>${ant.core.lib} </echo>
+		 <echo>${ant.home} </echo>
+		 <echo>${ant.library.dir} </echo>
+		 
+		 </target>
+		 </project>
+		 
